@@ -10,109 +10,146 @@
 <!---This is the body---->
 
 <body>
+<!--wrap the header to include the graphic  on the side-->
+    <div class = "wrapper">
 
-    <header><img src="images/logo-gdesnews.png" alt="GDES News logo">
+    <header>
+        <img src="images/logo-gdesnews.png" alt="GDES News logo">
+ <!--Don't use the word button. Use "pill"-->       
         <h1>Latest News</h1>
+        <nav>
+            <div class="pill1">
+                <a href=“#”>Politics</a>
+            </div>
+            <div class="pill1">
+                <a href=“#”>Sports</a>
+            </div>
+            <div class="pill1">
+                <a href=“#”>Tech</a>
+            </div>
+        </nav>
     </header>
-
-
-
-    <div>
-        <img src="images/microchip.png" alt="Picture of a computer chip">
+   <div class = "graphic"> <img src="images/icon-computer.png" alt=" Icon of a computer">
     </div>
-    </header>
-
-    <div>
-        <h2>Revolutionary Quantum Smartphone Unveiled: Charges In a Fraction of a Second</h2>
     </div>
-    <article>
-        <p>
-            In a game-changing leap for mobile technology, a startup claims to have developed a quantum smartphone that
-            can fully charge in just 0.00001 seconds. Users can say goodbye to battery anxiety and enjoy uninterrupted
-            phone use for days on end. However, experts are skeptical about the practicality of this technology, given
-            the current limitations of quantum computing.
-        </p>
-    </article>
-    <div>
-        <img src="images/pizza.png" alt="Picture of a Pizza">
-    </div>
+<!--from here to the end of the first four articles should be grid-->
+<main>    
+<div class="grid">
+        <article>
+            <div class="cellphone">
+                <img src="images/microchip.png" alt="Picture of a computer chip">
+            </div>
+<!--using textbox as a class to define all of the text within articles-->
+            <div class="textbox">
+                <h2>Revolutionary Quantum Smartphone Unveiled: Charges In a Fraction of a Second</h2>
+                <p>
+                    In a game-changing leap for mobile technology, a startup claims to have developed a quantum
+                    smartphone
+                    that
+                    can fully charge in just 0.00001 seconds. Users can say goodbye to battery anxiety and enjoy
+                    uninterrupted
+                    phone use for days on end. However, experts are skeptical about the practicality of this technology,
+                    given
+                    the current limitations of quantum computing.
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="pizza">
+                <img src="images/pizza.png" alt="Picture of a Pizza">
 
-    <div>
-        <h2>AI-Powered Robo-Pizza Chefs Are Taking Over the Fast Food Industry
-        </h2>
-    </div>
-    <article>
-        <p>
+                <div class="textbox">
+                    <h2>AI-Powered Robo-Pizza Chefs Are Taking Over the Fast Food Industry</h2>
+                    <p>
+                        Pizza parlors across the nation are adopting AI-powered robotic chefs that can prepare and cook
+                        a pizza
+                        faster than ever before. These robots claim to deliver perfectly crisp crusts and evenly
+                        distributed
+                        toppings. But don’t fret, traditional pizzaiolos aren’t going extinct just yet – customers still
+                        seem to
+                        prefer that human touch when it comes to their favorite slice.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="mars">
+                <img src="images/mars.png" alt="Picture of Mars">
+                <div class="textbox">
+                    <h2>NASA's New Space Elevator Will Reach Mars in Just 2 Hours</h2>
+                    <p>
+                        In a groundbreaking announcement, NASA has revealed plans for a space elevator that will connect
+                        Earth
+                        to
+                        Mars in under two hours. With this technology, interplanetary travel will become as easy as
+                        riding an
+                        elevator. However, before you pack your bags for the Red Planet, experts caution that such a
+                        project
+                        would
+                        require unimaginable advancements in materials science and engineering.
 
-            Pizza parlors across the nation are adopting AI-powered robotic chefs that can prepare and cook a pizza
-            faster than ever before. These robots claim to deliver perfectly crisp crusts and evenly distributed
-            toppings. But don’t fret, traditional pizzaiolos aren’t going extinct just yet – customers still seem to
-            prefer that human touch when it comes to their favorite slice.</p>
-    </article>
-    <div>
-        <img src="images/mars.png" alt="Picture of Mars">
-    </div>
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="coffee">
+                <img src="images/coffee.png" alt="Picture of Cups of Coffee">
 
-    <div>
-        <h2>NASA's New Space Elevator Will Reach Mars in Just 2 Hours
-        </h2>
-    </div>
-    <article>
-        <p>
+                <div class="textbox">
+                    <h2>World's First Mind-Reading Coffee Machine Brews Your Perfect Cup of Coffee</h2>
+                    <p>
 
-            In a groundbreaking announcement, NASA has revealed plans for a space elevator that will connect Earth to
-            Mars in under two hours. With this technology, interplanetary travel will become as easy as riding an
-            elevator. However, before you pack your bags for the Red Planet, experts caution that such a project would
-            require unimaginable advancements in materials science and engineering.
+                        Imagine a world where your coffee machine knows exactly how you’re feeling and brews the perfect
+                        cup of
+                        coffee to match your mood. A new startup claims to have developed a coffee maker that can read
+                        your
+                        thoughts
+                        and preferences, delivering a customized caffeine experience. While it sounds enticing, critics
+                        argue
+                        that
+                        mind-reading technology of this caliber is far from being a reality.
+                    </p>
+                </div>
+            </div>
 
-        </p>
-    </article>
-    <div>
-        <img src="images/coffee.png" alt="Picture of Cups of Coffee">
-    </div>
-
-    <div>
-        <h2>World's First Mind-Reading Coffee Machine Brews Your Perfect Cup of Coffee
-        </h2>
-    </div>
-    <article>
-        <p>
-
-            Imagine a world where your coffee machine knows exactly how you’re feeling and brews the perfect cup of
-            coffee to match your mood. A new startup claims to have developed a coffee maker that can read your thoughts
-            and preferences, delivering a customized caffeine experience. While it sounds enticing, critics argue that
-            mind-reading technology of this caliber is far from being a reality.
-        </p>
-    </article>
+        </article>
    
-    <hr>
-
-    <div>
-        <h2>Internet 2.0 Unveiled: Downloading Physical Objects at the Speed of Light</h2>
     </div>
+    <hr>
+    <!--From here to the footer does not need to be grid as it needs to cover the entire width of the display-->
+    <div class ="bottom">
+    <section>
+        <div>
+            <h2>
+                <div class ="internet">
+                    Internet 2.0 Unveiled: Downloading Physical Objects at the Speed of Light</h2>
+        </div>
 
-    <article>
-        <p>
+        <article>
+            <p>
+                A tech company has announced Internet 2.0, a revolutionary upgrade that promises to allow users to
+                download physical objects as easily as they download files online. While this sounds like science
+                fiction come true, experts warn that it’s too early to ditch your Amazon Prime membership, as
+                teleportation technology remains firmly in the realm of fantasy.
+            </p>
+        </article>
+    </section>
+</main>
+    <!--having trouble getting the color to apply to the rest of this area below-->
 
-            A tech company has announced Internet 2.0, a revolutionary upgrade that promises to allow users to
-            download physical objects as easily as they download files online. While this sounds like science
-            fiction come true, experts warn that it’s too early to ditch your Amazon Prime membership, as
-            teleportation technology remains firmly in the realm of fantasy.
-        </p>
-    </article>
-    
     <div class="welcome">
         <h2>
             Welcome to the North Idaho College Graphic and Web Design Program – where pixels become playgrounds
             and creativity knows no bounds!
         </h2>
-        
+
         <div class="classroom">
             <img src="images/gdes-classroom.png" alt="Picture of GDES Logo">
         </div>
 
         <h2>About Us</h2>
-        
+
         <article>
             <p>
                 Hey there, digital dreamer! We’re the wizards behind the web, the artists of the Adobe Suite,
@@ -120,13 +157,13 @@
                 Idaho, our Graphic and Web Design Program is where innovation meets inspiration.
             </p>
         </article>
-        
+<!--doesn't seem as though short h2's need to be centered-->
         <div>
             <h2>
                 We Paint the Digital Canvas
             </h2>
         </div>
-        
+
         <article>
             <p>
                 Imagine a world where every click is a masterpiece and every scroll is an adventure. That’s the
@@ -135,7 +172,7 @@
                 color and content.
             </p>
         </article>
-        
+
         <div>
             <p>
                 By day, we’re delving into the secrets of HTML, CSS, and JavaScript – the building blocks of the
@@ -144,14 +181,16 @@
                 it!
             </p>
         </div>
-        
+<!--Do I need to re-name the buttons to pills?-->
         <div class="button_GDES">
             <a href=“#”>Visit the GDES Program at N.I.C.</a>
         </div>
-        
-        <footer><img src="images/logo-gdesnews-white.jpg" alt="GDES News logo">
-            <p>2023-NIC-GDES-252</p>
-        </footer>
     </div>
+    </section>
+    </div>
+<!--Footer does not need to display as a grid-->
+    <footer><img src="images/logo-gdesnews white.png" alt="GDES News logo">
+        <p>&copy 2023-NIC-GDES-252</p>
+    </footer>
 </body>
 </html>
