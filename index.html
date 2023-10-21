@@ -10,40 +10,47 @@
 <!---This is the body---->
 
 <body>
-<!--wrap the header to include the graphic  on the side-->
-    <div class = "wrapper">
+    <!--wrap the header to include the graphic  on the side-->
+    <div class="wrapper">
 
-    <header>
-        <img src="images/logo-gdesnews.png" alt="GDES News logo">
- <!--Don't use the word button. Use "pill"-->       
-        <h1>Latest News</h1>
-        <nav>
-            <div class="pill1">
-                <a href=“#”>Politics</a>
-            </div>
-            <div class="pill1">
-                <a href=“#”>Sports</a>
-            </div>
-            <div class="pill1">
-                <a href=“#”>Tech</a>
-            </div>
-        </nav>
-    </header>
-   <div class = "graphic"> <img src="images/icon-computer.png" alt=" Icon of a computer">
+        <header>
+            <img src="images/logo-gdesnews.png" alt="GDES News logo">
+            <!--Don't use the word button. Use "pill"-->
+            <h1>Latest News</h1>
+            <nav>
+                <div class="pill1">
+                    <a href=“#”>Politics</a>
+                </div>
+                <div class="pill1 active">
+                    <a href=“#”>Sports</a>
+                </div>
+                <div class="pill1">
+                    <a href=“#”>Tech</a>
+                </div>
+            </nav>
+        </header>
+        <div class="graphic"> <img src="images/icon-computer.png" alt=" Icon of a computer">
+        </div>
     </div>
-    </div>
-<!--from here to the end of the first four articles should be grid-->
-<main>    
-<div class="grid">
-        <article>
+    <!--from here to the end of the first four articles should be grid-->
+    <main>
+        <article id="one">
             <div class="cellphone">
                 <img src="images/microchip.png" alt="Picture of a computer chip">
             </div>
-<!--using textbox as a class to define all of the text within articles-->
-            <div class="textbox">
+            <!--using textbox as a class to define all of the text within articles-->
+            <div class="text-box">
                 <h2>Revolutionary Quantum Smartphone Unveiled: Charges In a Fraction of a Second</h2>
                 <p>
-                    In a game-changing leap for mobile technology, a startup claims to have developed a quantum
+                    In a game-changing leap .grid {
+                    display: grid;
+                    grid-template: auto / 1fr 1fr;
+                    gap: 4rem;
+                    }
+
+                    .grid-item {
+                    margin-bottom: 0;
+                    }for mobile technology, a startup claims to have developed a quantum
                     smartphone
                     that
                     can fully charge in just 0.00001 seconds. Users can say goodbye to battery anxiety and enjoy
@@ -54,11 +61,11 @@
                 </p>
             </div>
         </article>
-        <article>
+        <article id="two">
             <div class="pizza">
                 <img src="images/pizza.png" alt="Picture of a Pizza">
 
-                <div class="textbox">
+                <div class="text-box">
                     <h2>AI-Powered Robo-Pizza Chefs Are Taking Over the Fast Food Industry</h2>
                     <p>
                         Pizza parlors across the nation are adopting AI-powered robotic chefs that can prepare and cook
@@ -72,10 +79,10 @@
                 </div>
             </div>
         </article>
-        <article>
+        <article id="three">
             <div class="mars">
                 <img src="images/mars.png" alt="Picture of Mars">
-                <div class="textbox">
+                <div class="text-box">
                     <h2>NASA's New Space Elevator Will Reach Mars in Just 2 Hours</h2>
                     <p>
                         In a groundbreaking announcement, NASA has revealed plans for a space elevator that will connect
@@ -92,11 +99,11 @@
                 </div>
             </div>
         </article>
-        <article>
+        <article id="four">
             <div class="coffee">
                 <img src="images/coffee.png" alt="Picture of Cups of Coffee">
 
-                <div class="textbox">
+                <div class="text-box">
                     <h2>World's First Mind-Reading Coffee Machine Brews Your Perfect Cup of Coffee</h2>
                     <p>
 
@@ -114,19 +121,14 @@
             </div>
 
         </article>
-   
-    </div>
-    <hr>
-    <!--From here to the footer does not need to be grid as it needs to cover the entire width of the display-->
-    <div class ="bottom">
-    <section>
-        <div>
+        <article id="five">
             <h2>
-                <div class ="internet">
-                    Internet 2.0 Unveiled: Downloading Physical Objects at the Speed of Light</h2>
-        </div>
+                <div class="internet">
+                    Internet 2.0 Unveiled: Downloading Physical Objects at the Speed of Light
+            </h2>
 
-        <article>
+
+
             <p>
                 A tech company has announced Internet 2.0, a revolutionary upgrade that promises to allow users to
                 download physical objects as easily as they download files online. While this sounds like science
@@ -134,63 +136,68 @@
                 teleportation technology remains firmly in the realm of fantasy.
             </p>
         </article>
-    </section>
-</main>
-    <!--having trouble getting the color to apply to the rest of this area below-->
 
-    <div class="welcome">
-        <h2>
-            Welcome to the North Idaho College Graphic and Web Design Program – where pixels become playgrounds
-            and creativity knows no bounds!
-        </h2>
+        <hr>
+    </main>
+    <!--From here to the footer does not need to be grid as it needs to cover the entire width of the display-->
+    <div class="bottom">
 
-        <div class="classroom">
-            <img src="images/gdes-classroom.png" alt="Picture of GDES Logo">
-        </div>
+        <!--having trouble getting the color to apply to the rest of this area below-->
+        <section>
+            <div class="welcome">
+                <h2>
+                    Welcome to the North Idaho College Graphic and Web Design Program – where pixels become playgrounds
+                    and creativity knows no bounds!
+                </h2>
 
-        <h2>About Us</h2>
+                <div class="classroom">
+                    <img src="images/gdes-classroom.png" alt="Picture of GDES Logo">
+                </div>
 
-        <article>
-            <p>
-                Hey there, digital dreamer! We’re the wizards behind the web, the artists of the Adobe Suite,
-                and the creative minds shaping pixels into perfection. Nestled in the picturesque heart of North
-                Idaho, our Graphic and Web Design Program is where innovation meets inspiration.
-            </p>
-        </article>
-<!--doesn't seem as though short h2's need to be centered-->
-        <div>
-            <h2>
-                We Paint the Digital Canvas
-            </h2>
-        </div>
+                <h2>About Us</h2>
 
-        <article>
-            <p>
-                Imagine a world where every click is a masterpiece and every scroll is an adventure. That’s the
-                world we’re crafting right here at NIC. With brushes in one hand and code in the other, we’re
-                the modern-day Da Vincis of the internet age, turning blank screens into stunning symphonies of
-                color and content.
-            </p>
-        </article>
+                <article id="about">
+                    <p>
+                        Hey there, digital dreamer! We’re the wizards behind the web, the artists of the Adobe Suite,
+                        and the creative minds shaping pixels into perfection. Nestled in the picturesque heart of North
+                        Idaho, our Graphic and Web Design Program is where innovation meets inspiration.
+                    </p>
+                </article>
+                <!--doesn't seem as though short h2's need to be centered-->
+                <div>
+                    <h2>
+                        We Paint the Digital Canvas
+                    </h2>
+                </div>
 
-        <div>
-            <p>
-                By day, we’re delving into the secrets of HTML, CSS, and JavaScript – the building blocks of the
-                digital realm. By night, we’re conjuring up designs that’ll make your website stand out like a
-                neon unicorn in a field of plain horses. We’re equal parts geeks and artists, and we’re proud of
-                it!
-            </p>
-        </div>
-<!--Do I need to re-name the buttons to pills?-->
-        <div class="button_GDES">
-            <a href=“#”>Visit the GDES Program at N.I.C.</a>
-        </div>
-    </div>
-    </section>
-    </div>
-<!--Footer does not need to display as a grid-->
-    <footer><img src="images/logo-gdesnews white.png" alt="GDES News logo">
-        <p>&copy 2023-NIC-GDES-252</p>
-    </footer>
+                <article id="digital">
+                    <p>
+                        Imagine a world where every click is a masterpiece and every scroll is an adventure. That’s the
+                        world we’re crafting right here at NIC. With brushes in one hand and code in the other, we’re
+                        the modern-day Da Vincis of the internet age, turning blank screens into stunning symphonies of
+                        color and content.
+                    </p>
+                </article>
+
+              <article id="code">
+                    <p>
+                        By day, we’re delving into the secrets of HTML, CSS, and JavaScript – the building blocks of the
+                        digital realm. By night, we’re conjuring up designs that’ll make your website stand out like a
+                        neon unicorn in a field of plain horses. We’re equal parts geeks and artists, and we’re proud of
+                        it!
+                    </p>
+               </article>
+                <!--Do I need to re-name the buttons to pills?-->
+                <div class="button_GDES">
+                    <a href=“#”>Visit the GDES Program at N.I.C.</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer does not need to display as a grid-->
+        <footer><img src="images/logo-gdesnews white.png" alt="GDES News logo">
+            <p>&copy 2023-NIC-GDES-252</p>
+        </footer>
 </body>
+
 </html>
